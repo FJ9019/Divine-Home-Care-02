@@ -1,0 +1,58 @@
+.contacts {
+    background-color: $background-blue;
+
+    .contact-image {
+        background-image: url('/images/contact-us.jpg');
+       background-size: cover;
+    }
+
+    .contact-form {
+        padding: 40px 40px 80px 40px;
+        color: white;
+
+        .contact-form-subtitle {
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form-title {
+            font-weight: lighter;
+        }
+
+        .contact-form-form {
+
+            div {
+                margin-top: 30px;
+
+                input {
+                    margin-left: 20px;
+
+                    &:first-of-type{
+                        margin-left: 0px;
+                    }
+                }
+                
+            }
+        }
+
+        .info-box{
+            padding: 10px 10px 10px 20px;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 1em;
+            visibility: hidden;
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        .success-message {
+            color: green;
+        }
+
+    }
+}

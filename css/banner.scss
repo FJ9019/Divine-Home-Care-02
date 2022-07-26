@@ -1,0 +1,72 @@
+$banner-height : 800px;
+
+.banner {
+    background-image: url("/images/home1_sl2.jpg");
+    background-size: cover;
+    height: $banner-height;
+    padding: 0px !important;
+
+    .banner-overlay {
+        height: $banner-height;
+        width: 100%;
+        background-color: rgba(1, 2, 14, 0.397);
+
+        .banner-content-title {
+            color: white;
+            font-size: 48px;
+        }
+
+        .banner-content-desc {
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            width: 40%;
+            text-align: center;
+        }
+    }
+
+}
+
+.banner-contact-section {
+    
+    margin-top: -2rem !important;
+  
+    %feature-box {
+        padding: 20px 15px 15px 15px;
+       
+        .contact-icon {
+            border-radius: 50%;
+            border: 1px dashed green;
+            color: green;
+            margin-right: 10px;
+            margin-left: 30px;
+            font-size: 1.2rem;
+            height: 48px;
+            width: 48px;
+            text-align: center;
+            line-height: 44px;
+        }
+
+        .contact-desc {
+            line-height: 18px;
+        }
+    }
+
+    .white-contact-box {
+        @extend %feature-box;
+        background-color: white;
+    }
+
+    .green-contact-box {
+        @extend %feature-box;
+        background-color: green;
+        div {
+            color: white !important;
+        }
+
+        .contact-icon {
+            border-radius: 50%;
+            border: 1px dashed white;
+        }
+    }
+}

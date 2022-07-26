@@ -1,0 +1,86 @@
+.banner {background-image:url("/images/home1_sl2.jpg");
+   background-size:cover;
+   height:800px;
+   padding:0px !important
+}
+
+.banner 
+.banner-overlay {
+    height:800px;
+    width:100%;
+    background-color:rgba(1,2,14,.397)
+}
+
+.banner .banner-overlay 
+.banner-content-title {
+    color:#fff;
+    font-size:48px
+}
+
+.banner .banner-overlay 
+.banner-content-desc {
+    color:#fff;
+    margin-top:15px;
+    margin-bottom:50px;
+    width:40%;
+    text-align:center
+}
+
+.banner-contact-section {
+    margin-top:-2rem !important
+}
+
+.banner-contact-section 
+.green-contact-box,
+.banner-contact-section 
+.white-contact-box {
+    padding:20px 15px 15px 15px
+}
+
+.banner-contact-section 
+.green-contact-box .contact-icon,
+.banner-contact-section 
+.white-contact-box 
+.contact-icon {
+    border-radius:50%;
+    border:1px dashed green;
+    color:green;
+    margin-right:10px;
+    margin-left:30px;
+    font-size:1.2rem;
+    height:48px;
+    width:48px;
+    text-align:center;
+    line-height:44px
+}
+
+.banner-contact-section 
+.green-contact-box 
+.contact-desc,
+.banner-contact-section 
+.white-contact-box 
+.contact-desc {
+    line-height:18px
+}
+
+.banner-contact-section 
+.white-contact-box {
+    background-color:#fff
+}
+
+.banner-contact-section 
+.green-contact-box {
+    background-color:green
+}
+
+.banner-contact-section 
+.green-contact-box div {
+    color:#fff !important
+}
+
+.banner-contact-section 
+.green-contact-box 
+.contact-icon {
+    border-radius:50%;
+    border:1px dashed #fff
+}

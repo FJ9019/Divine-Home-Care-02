@@ -1,0 +1,91 @@
+
+header {
+    position: fixed;
+    top:-5px; 
+    left:0;
+    z-index: 100;
+    width: 100%; 
+    padding-top: 40px;
+    -webkit-transition: padding-top 0.5s ease-out, background-color 1s ease-in;
+    -moz-transition: padding-top 0.5s ease-out, background-color 1s ease-in;
+    -o-transition: padding-top 0.5s ease-out, background-color 1s ease-in;
+    transition: padding-top 0.5s ease-out, background-color 1s ease-in;
+    
+    nav {
+        height: 90px;
+
+        button {
+            outline: none !important;
+            i {
+                color: $org-green;
+            }
+        }
+
+        .nav-menu {
+            font-weight: 400 !important;
+
+            .nav-item {
+                font-size: 0.9rem;
+                font-weight: 600;
+                cursor: pointer;
+                .nav-link {
+                    color:white !important;
+                }
+            }
+
+            .nav-active {
+                a {
+                    color: $org-green !important;
+                }
+                .nav-link {
+                    color:$org-green !important;
+                }
+            }
+        }
+
+        
+    }
+    .contact-button {
+        height: 45px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+  
+}
+
+.sticky-header {
+       
+    padding-top: 10px;
+    background-color: #272a2c;
+    a {
+        color: white !important;
+    }
+}
+
+.btn-scroll-to-top {
+    font-family: 'fontello';
+    opacity: 1;
+    bottom: 2em;
+    right: 2em;
+    position: fixed;
+    z-index: 100001;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2e9dd1;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    opacity: 0;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    &:before {
+        content: '\e92c';
+    }
+}
