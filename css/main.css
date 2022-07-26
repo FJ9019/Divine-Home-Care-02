@@ -177,6 +177,24 @@ body h1 {
     font-style:normal
 }
 
+
+.fa-thin .fa-circle-phone {
+    font-family: FontAwesome;
+    font-size: 19.2px;
+    text-decoration: none solid rgba(89, 156, 42);
+    text-align: center;
+    word-spacing: 0px;
+    background-color: #ffffff;
+    background-position:  0px 0px;
+    color: #599C2a;
+    height: auto;
+    width: auto;
+    display:inline;
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: rgba(255, 0, 0) dashed 1px;
+    box-sizing: border-box;
+} 
 [class*=" icon-"],
 [class^=icon-] {
     font-family:FontAwesome;
