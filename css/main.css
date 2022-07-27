@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Merienda:wght@400;700&family=Philosopher:wght@400;700&family=Poppins:wght@500;600&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 a,abbr,acronym,address,applet,
 article,aside,audio,b,big,blockquote,
 body,canvas,caption,center,cite,code,dd,
@@ -31,71 +34,6 @@ body {
 
 ol,ul {
     list-style:none
-}
-
-@font-face{font-family:montserrat;
-    src:url(/font/montserrat-extralight.eot);
-    src:url(/font/montserrat-extralight.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-extralight.woff2) 
-    format("woff2"),url(/font/montserrat-extralight.woff) 
-    format("woff"),url(/font/montserrat-extralight.ttf) 
-    format("truetype");
-    font-weight:200;
-    font-style:normal
-}
-
-@font-face {
-    font-family:montserrat;
-    src:url(/font/montserrat-light.eot);
-    src:url(/font/montserrat-light.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-light.woff2) 
-    format("woff2"),
-    url(/font/montserrat-light.woff) format("woff"),
-    url(/font/montserrat-light.ttf) format("truetype");
-    font-weight:300;font-style:normal
-}
-
-@font-face {
-    font-family:montserrat;
-    src:url(/font/montserrat-semibold.eot);
-    src:url(/font/montserrat-semibold.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-semibold.woff2) 
-    format("woff2"),
-    url(/font/montserrat-semibold.woff) 
-    format("woff"),
-    url(/font/montserrat-semibold.ttf) 
-    format("truetype");
-    font-weight:600;
-    font-style:normal
-}
-
-@font-face {
-    font-family:montserrat;
-    src:url(/font/montserrat-bold.eot);
-    src:url(/font/montserrat-bold.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-bold.woff2) 
-    format("woff2"),
-    url(/font/montserrat-bold.woff) 
-    format("woff"),url(/font/montserrat-bold.ttf) 
-    format("truetype");
-    font-weight:700;
-    font-style:normal
-}
-
-@font-face {
-    font-family:fontello;
-    src:url(/font/fontello.eot?40884483);
-    src:url(/font/fontello.eot?40884483#iefix) 
-    format("embedded-opentype"),url(/font/fontello.woff2?40884483) 
-    format("woff2"),url(/font/fontello.woff?40884483) 
-    format("woff"),url(/font/fontello.ttf?40884483) format("truetype"),
-    url(/font/fontello.svg?40884483#fontello) format("svg");
-    font-weight:400;
-    font-style:normal
 }
 
 body {
@@ -164,18 +102,8 @@ body h1 {
  *  Email: dave@fontawesome.io
  *  Twitter: http://twitter.com/davegandy
  *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
- */@font-face {
-    font-family:FontAwesome;
-    src:url(../font/fontawesome-webfont.eot?v=3.2.1);
-    src:url(../font/fontawesome-webfont.eot?#iefix&v=3.2.1) 
-    format("embedded-opentype"),
-    url(../font/fontawesome-webfont.woff?v=3.2.1) 
-    format("woff"),url(../font/fontawesome-webfont.ttf?v=3.2.1) 
-    format("truetype"),url(../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) 
-    format("svg");
-    font-weight:400;
-    font-style:normal
-}
+ */
+
 
 [class*=" icon-"],
 [class^=icon-] {
@@ -765,65 +693,8 @@ ul.links li a:hover {
     text-decoration:none
 }
 
-[class*=" ab-icon-"]:before,
-[class^=ab-icon-]:before {
-    font-family:fontello;
-    font-style:normal;
-    font-weight:400;
-    display:inline-block;
-    text-decoration:inherit;
-    width:1em;
-    margin-right:.2em;
-    text-align:center;
-    font-variant:normal;
-    text-transform:none;
-    line-height:1em;
-    margin-left:.2em;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
-}
 
 
-.generic-icon {
-    font-size:48px;
-    color:#202325;
-}
-
-.ab-icon-logout:before {
-    content:"\e80b"
-}
-
-.ab-icon-address:before {
-    content:"\e834"
-}
-
-.ab-icon-food-light:before {
-    content:"\e861"
-}
-
-.ab-icon-slideshare:before {
-    content:"\e88f"
-}
-
-.ab-icon-home-alt:before {
-    content:"\e8fb"
-}
-
-.ab-icon-speech:before {
-    content:"\e90b"
-}
-
-.ab-icon-surgeon:before {
-    content:"\e944"
-}
-
-.ab-icon-medicine:before {
-    content:"\e94d"
-}
-
-.ab-icon-patch:before {
-    content:"\e953"
-}
 
 header {
     position:fixed;
@@ -1002,156 +873,84 @@ header .contact-button {
     border:1px dashed #fff
 }
 
-.features {
-    padding-top:100px;
-    text-align:center
+/* =============== Key Features CSS ================== */
+
+h2 {
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: 500px;
+    line-height: 38.4px;
+    text-decoration: none solid rgba(106, 106, 106);
+    word-spacing: 0px;
 }
 
-.features 
-.feature-box {
-    padding:60px 35px 35px;
-    margin-top:20px
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.features 
-.feature-box 
-.generic-icon:before {
-    margin:0!important;
-    color:#2e9dd1
+h3 {
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.features 
-.feature-box 
-.feature-title {
-    color:#2e9dd1;
-    margin-top:25px
+.fas .fas-hospital-alt {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 42px;
+    height: 82px;
+    width: 87.25px;
+    margin: 0 0 30px 0;
+}
+.key-features {
+    padding: 50px;
 }
 
-.features 
-.feature-box 
-.feature-desc {
-    margin-top:15px;
-    font-size:13px;
-    line-height:20px
+@media screen and (max-width: 940px) {
+      
+.key-features {
+   padding: 30px 10px; 
+}
 }
 
-.features 
-.features-about-us {
-    background-color:#f5f8fa!important
+.key-features 
+.single-key {
+   background-color: #FFF;
+   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+   border-radius: 2px;
+   margin-bottom: 30px;
+   text-align: center;
+   padding: 30px; 
 }
 
-.features 
-.features-about-us 
-.two-cloumn-with-image {
-    margin-top:8.15rem;
-    margin-bottom:8.15rem
+.key-features 
+.single-key i {
+   background-color: #99cc43;
+   padding: 20px;
+   font-size: 42px;
+   color: #FFF;
+   margin-bottom: 30px;
+   border-radius: 50px; }
+
+.key-features 
+.single-key:hover {
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
 }
 
-.features 
-.features-about-us 
-.two-cloumn-with-image 
-.about-us-image {
-    background-image:url(/images/about-us.jpg);
-    background-size:cover
+.key-features 
+.single-key p {
+   font-family: "mouse-300", Arial, Helvetica, sans-serif;
+   font-size: 15px; 
 }
 
-.features-what-we-do {
-    padding:100px 20px;
-    background-color:#fff;
-    text-align:center
-}
-
-.service {
-    justify-content:center;
-    padding:40px 10px 0
-}
-
-.service .service-icon {
-    margin:auto;
-    border-radius:50%;
-    border:1px solid #ddd;
-    box-shadow:0 0 0 4px rgba(0,0,0,.02);
-    font-size:3em;height:2em;
-    line-height:2em;
-    width:2em;
-    color:#2e9dd1
-}
-
-.service 
-.service-title {
-    margin:20px;
-    font-size:20px;
-    color:#3d3e3f
-}
-
-.service .service-desc {
-    font-size:14px;
-    line-height:22px;
-    padding:22px
-}
-
-.contacts {
-    background-color:#2e9dd1
-}
-
-.contacts .contact-image {
-    background-image:url(/images/contact-us.jpg);
-    background-size:cover
-}
-
-.contacts .contact-form {
-    padding:40px 40px 80px;
-    color:#fff
-}
-
-.contacts .contact-form 
-.contact-form-subtitle {
-    font-size:14px;
-    font-weight:700;
-    margin-left:5px;
-    margin-bottom:10px
-}
-
-.contacts .contact-form 
-.contact-form-title {
-    font-weight:lighter
-}
-
-.contacts .contact-form 
-.contact-form-form div {
-    margin-top:30px
-}
-
-.contacts .contact-form 
-.contact-form-form div input {
-    margin-left:20px
-}
-
-.contacts .contact-form 
-.contact-form-form div input:first-of-type {
-    margin-left:0
-}
-
-.contacts .contact-form 
-.info-box {
-    padding:10px 10px 10px 20px;
-    background-color:#fff;
-    margin-top:20px;
-    margin-bottom:20px;
-    border-radius:1em;
-    visibility:hidden
-}
-
-.contacts .contact-form 
-.error-message {
-    color:red
-}
-
-.contacts 
-.contact-form 
-.success-message {
-    color:green
-}
+/* =============== End Key Features CSS ================== */
 
 footer {
     background-color:#1b2024;
