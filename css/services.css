@@ -529,7 +529,7 @@ body h1 {
 
 .page-section 
 .section-subtitle {
-    color:#599c2a;
+    color:#87CEEB;
     font-size:14px;
     font-weight:600
 }
@@ -765,64 +765,6 @@ ul.links li a:hover {
     text-decoration:none
 }
 
-[class*=" ab-icon-"]:before,
-[class^=ab-icon-]:before {
-    font-family:fontello;
-    font-style:normal;
-    font-weight:400;
-    display:inline-block;
-    text-decoration:inherit;
-    width:1em;
-    margin-right:.2em;
-    text-align:center;
-    font-variant:normal;
-    text-transform:none;
-    line-height:1em;
-    margin-left:.2em;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
-}
-
-.generic-icon {
-    font-size:48px;
-    color:#202325
-}
-
-.ab-icon-logout:before {
-    content:"\e80b"
-}
-
-.ab-icon-address:before {
-    content:"\e834"
-}
-
-.ab-icon-food-light:before {
-    content:"\e861"
-}
-
-.ab-icon-slideshare:before {
-    content:"\e88f"
-}
-
-.ab-icon-home-alt:before {
-    content:"\e8fb"
-}
-
-.ab-icon-speech:before {
-    content:"\e90b"
-}
-
-.ab-icon-surgeon:before {
-    content:"\e944"
-}
-
-.ab-icon-medicine:before {
-    content:"\e94d"
-}
-
-.ab-icon-patch:before {
-    content:"\e953"
-}
 
 header {
     position:fixed;
@@ -844,7 +786,7 @@ header nav button {
 }
 
 header nav button i {
-    color:#599c2a
+    color:#87CEEB
 }
 
 header nav .nav-menu {
@@ -867,7 +809,7 @@ header nav .nav-menu
 .nav-active .nav-link,
 header nav .nav-menu 
 .nav-active a {
-    color:#599c2a!important
+    color:#87CEEB!important
 }
 
 header .contact-button {
@@ -960,7 +902,7 @@ header .contact-button {
 .contact-icon {
     border-radius:50%;
     border:1px dashed green;
-    color:#599c2a;
+    color:#87CEEB;
     margin-right:10px;
     margin-left:30px;
     font-size:1.2rem;
@@ -986,7 +928,7 @@ header .contact-button {
 
 .banner-contact-section 
 .green-contact-box {
-    background-color:#599c2a
+    background-color:#87CEEB
 }
 
 .banner-contact-section 
@@ -1000,157 +942,55 @@ header .contact-button {
     border-radius:50%;
     border:1px dashed #fff
 }
+/* End Banner */
 
-.features {
-    padding-top:100px;
-    text-align:center
+/* Services */
+.container {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none solid rgba(40, 40, 40);
+    background-color: transparent;
 }
 
-.features 
-.feature-box {
-    padding:60px 35px 35px;
-    margin-top:20px
-}
+.services {
+    padding: 140px 0 75px;
+    background: transparent;
 
-.features 
-.feature-box 
-.generic-icon:before {
-    margin:0!important;
-    color:#2e9dd1
-}
+  }
+  .media.service-box {
+    padding: 20px 15px 10px;
+    overflow: hidden;
+    border-bottom: 2px solid #E0E0E0;
+    color: #DEDEDE;
+    border: 1px solid #5A5A5A;
+  }
+  .media.service-box .pull-left {
+    margin-right: 0px;
+  }
+  .media.service-box .pull-left > i {
+    font-size: 64px;
+    height: 94px;
+    line-height: 64px;
+    text-align: center;
+    width: 106px;
+    color: #19BD9B;
+    /* background:#fff; */
+    /* box-shadow: inset 0 0 0 1px #d7d7d7; */
+    /* -webkit-box-shadow: inset 0 0 0 1px #d7d7d7; */
+    transition: background-color 400ms, background-color 400ms;
+    position: relative;
+    border-bottom: 0;
+    padding: 14px;
+    margin: 60px 10px 0 -25px;
+    position: relative;
+    bottom: 44px;
+    /* left: 14px; */
+  }
+  
 
-.features 
-.feature-box 
-.feature-title {
-    color:#2e9dd1;
-    margin-top:25px
-}
 
-.features 
-.feature-box 
-.feature-desc {
-    margin-top:15px;
-    font-size:13px;
-    line-height:20px
-}
-
-.features 
-.features-about-us {
-    background-color:#f5f8fa!important
-}
-
-.features 
-.features-about-us 
-.two-cloumn-with-image {
-    margin-top:8.15rem;
-    margin-bottom:8.15rem
-}
-
-.features 
-.features-about-us 
-.two-cloumn-with-image 
-.about-us-image {
-    background-image:url(/images/about-us.jpg);
-    background-size:cover
-}
-
-.features-what-we-do {
-    padding:100px 20px;
-    background-color:#fff;
-    text-align:center
-}
-
-.service {
-    justify-content:center;
-    padding:40px 10px 0
-}
-
-.service .service-icon {
-    margin:auto;
-    border-radius:50%;
-    border:1px solid #ddd;
-    box-shadow:0 0 0 4px rgba(0,0,0,.02);
-    font-size:3em;height:2em;
-    line-height:2em;
-    width:2em;
-    color:#2e9dd1
-}
-
-.service 
-.service-title {
-    margin:20px;
-    font-size:20px;
-    color:#3d3e3f
-}
-
-.service .service-desc {
-    font-size:14px;
-    line-height:22px;
-    padding:22px
-}
-
-.contacts {
-    background-color:#2e9dd1
-}
-
-.contacts .contact-image {
-    background-image:url(/images/contact-us.jpg);
-    background-size:cover
-}
-
-.contacts .contact-form {
-    padding:40px 40px 80px;
-    color:#fff
-}
-
-.contacts .contact-form 
-.contact-form-subtitle {
-    font-size:14px;
-    font-weight:700;
-    margin-left:5px;
-    margin-bottom:10px
-}
-
-.contacts .contact-form 
-.contact-form-title {
-    font-weight:lighter
-}
-
-.contacts .contact-form 
-.contact-form-form div {
-    margin-top:30px
-}
-
-.contacts .contact-form 
-.contact-form-form div input {
-    margin-left:20px
-}
-
-.contacts .contact-form 
-.contact-form-form div input:first-of-type {
-    margin-left:0
-}
-
-.contacts .contact-form 
-.info-box {
-    padding:10px 10px 10px 20px;
-    background-color:#fff;
-    margin-top:20px;
-    margin-bottom:20px;
-    border-radius:1em;
-    visibility:hidden
-}
-
-.contacts .contact-form 
-.error-message {
-    color:red
-}
-
-.contacts 
-.contact-form 
-.success-message {
-    color:green
-}
+/* End Services */
 
 footer {
     background-color:#1b2024;

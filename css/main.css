@@ -457,7 +457,7 @@ body h1 {
 
 .page-section 
 .section-subtitle {
-    color:#599c2a;
+    color:#87CEEB;
     font-size:14px;
     font-weight:600
 }
@@ -716,7 +716,7 @@ header nav button {
 }
 
 header nav button i {
-    color:#599c2a
+    color:#87CEEB
 }
 
 header nav .nav-menu {
@@ -739,7 +739,7 @@ header nav .nav-menu
 .nav-active .nav-link,
 header nav .nav-menu 
 .nav-active a {
-    color:#599c2a!important
+    color:#87CEEB!important
 }
 
 header .contact-button {
@@ -832,7 +832,7 @@ header .contact-button {
 .contact-icon {
     border-radius:50%;
     border:1px dashed green;
-    color:#599c2a;
+    color:#87CEEB;
     margin-right:10px;
     margin-left:30px;
     font-size:1.2rem;
@@ -858,7 +858,7 @@ header .contact-button {
 
 .banner-contact-section 
 .green-contact-box {
-    background-color:#599c2a
+    background-color:#87CEEB
 }
 
 .banner-contact-section 
@@ -875,80 +875,10 @@ header .contact-button {
 
 /* =============== Key Features CSS ================== */
 
-h2 {
-    color: green;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 32px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 8px;
-    font-weight: 500px;
-    line-height: 38.4px;
-    text-decoration: none solid rgba(106, 106, 106);
-    word-spacing: 0px;
-}
 
-p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
-h3 {
-    color: black;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
 
-.fas .fas-hospital-alt {
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 42px;
-    height: 82px;
-    width: 87.25px;
-    margin: 0 0 30px 0;
-}
-.key-features {
-    padding: 50px;
-}
 
-@media screen and (max-width: 940px) {
-      
-.key-features {
-   padding: 30px 10px; 
-}
-}
-
-.key-features 
-.single-key {
-   background-color: #FFF;
-   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-   border-radius: 2px;
-   margin-bottom: 30px;
-   text-align: center;
-   padding: 30px; 
-}
-
-.key-features 
-.single-key i {
-   background-color: #99cc43;
-   padding: 20px;
-   font-size: 42px;
-   color: #FFF;
-   margin-bottom: 30px;
-   border-radius: 50px; }
-
-.key-features 
-.single-key:hover {
-   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
-}
-
-.key-features 
-.single-key p {
-   font-family: "mouse-300", Arial, Helvetica, sans-serif;
-   font-size: 15px; 
-}
 
 /* =============== End Key Features CSS ================== */
 

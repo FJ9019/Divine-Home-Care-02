@@ -529,7 +529,7 @@ body h1 {
 
 .page-section 
 .section-subtitle {
-    color:#599c2a;
+    color:#87CEEB;
     font-size:14px;
     font-weight:600
 }
@@ -844,7 +844,7 @@ header nav button {
 }
 
 header nav button i {
-    color:#599c2a
+    color:#87CEEB
 }
 
 header nav .nav-menu {
@@ -867,7 +867,7 @@ header nav .nav-menu
 .nav-active .nav-link,
 header nav .nav-menu 
 .nav-active a {
-    color:#599c2a!important
+    color:#87CEEB!important
 }
 
 header .contact-button {
@@ -960,7 +960,7 @@ header .contact-button {
 .contact-icon {
     border-radius:50%;
     border:1px dashed green;
-    color:#599c2a;
+    color:#87CEEB;
     margin-right:10px;
     margin-left:30px;
     font-size:1.2rem;
@@ -986,7 +986,7 @@ header .contact-button {
 
 .banner-contact-section 
 .green-contact-box {
-    background-color:#599c2a
+    background-color:#87CEEB
 }
 
 .banner-contact-section 
