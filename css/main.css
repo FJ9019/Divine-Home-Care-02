@@ -900,32 +900,82 @@ h3 {
 /* =============== End Home CSS ================== */
 
 /* Features */
-h4 {
-    margin-top: -45px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 10px;
-    font-style: normal;
-    font-display: 10px;
+
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
 }
-#features ul {
-    margin: 80px 0;
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
 }
-#features ul li {
-    width: 300px;
-    padding-top: 140px;
-    float: left;
-    margin-right: 10px;
-    text-align: center;
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
 }
-#features ul li.feature-1 {
-    background: url('../images/ambulance.png') no-repeat top center;
+
+.our-team-main p
+{
+	margin-bottom:0;
 }
-#features ul li.feature-2 {
-    background: url('../images/features-icon-2.png') no-repeat top center;
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	
 }
-#features ul li.feature-3 {
-    background: url('../images/features-icon-3.png') no-repeat top center;
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
 }
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+/*our-team-main*/
+
+
+
 /* End Features */
 
 /* Footer */
