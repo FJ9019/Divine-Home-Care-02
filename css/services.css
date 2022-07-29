@@ -833,12 +833,12 @@ header .contact-button {
 .banner {
     background-image:url(../images/home1_sl4.jpg);
     background-size:cover;
-    height:800px;
+    height:600px;
     padding:0!important
 }
 
 .banner .banner-overlay {
-    height:800px;
+    height:600px;
     width:100%;
     background-color:rgba(1,2,14,.397)
 }
@@ -978,6 +978,24 @@ header .contact-button {
       width: 100%;
     }
   }
+
+.media
+.align-self-center {
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.mt-0 {
+    color: #218abb;
+    margin-bottom: 8px;
+    font-style:italic;
+    font-size: 25px;
+}
+
+p {
+    margin-bottom: 5px;
+    
+}
 
 
 /* End Services */
