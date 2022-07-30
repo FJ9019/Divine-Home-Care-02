@@ -2,6 +2,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Merienda:wght@400;700&family=Philosopher:wght@400;700&family=Poppins:wght@500;600&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 a,abbr,acronym,address,applet,
 article,aside,audio,b,big,blockquote,
 body,canvas,caption,center,cite,code,dd,
@@ -34,71 +36,6 @@ body {
 
 ol,ul {
     list-style:none
-}
-
-@font-face{font-family:montserrat;
-    src:url(/font/montserrat-extralight.eot);
-    src:url(/font/montserrat-extralight.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-extralight.woff2) 
-    format("woff2"),url(/font/montserrat-extralight.woff) 
-    format("woff"),url(/font/montserrat-extralight.ttf) 
-    format("truetype");
-    font-weight:200;
-    font-style:normal
-}
-
-@font-face {
-    font-family:montserrat;
-    src:url(/font/montserrat-light.eot);
-    src:url(/font/montserrat-light.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-light.woff2) 
-    format("woff2"),
-    url(/font/montserrat-light.woff) format("woff"),
-    url(/font/montserrat-light.ttf) format("truetype");
-    font-weight:300;font-style:normal
-}
-
-@font-face {
-    font-family:montserrat;
-    src:url(/font/montserrat-semibold.eot);
-    src:url(/font/montserrat-semibold.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-semibold.woff2) 
-    format("woff2"),
-    url(/font/montserrat-semibold.woff) 
-    format("woff"),
-    url(/font/montserrat-semibold.ttf) 
-    format("truetype");
-    font-weight:600;
-    font-style:normal
-}
-
-@font-face {
-    font-family:montserrat;
-    src:url(/font/montserrat-bold.eot);
-    src:url(/font/montserrat-bold.eot?#iefix) 
-    format("embedded-opentype"),
-    url(/font/montserrat-bold.woff2) 
-    format("woff2"),
-    url(/font/montserrat-bold.woff) 
-    format("woff"),url(/font/montserrat-bold.ttf) 
-    format("truetype");
-    font-weight:700;
-    font-style:normal
-}
-
-@font-face {
-    font-family:fontello;
-    src:url(/font/fontello.eot?40884483);
-    src:url(/font/fontello.eot?40884483#iefix) 
-    format("embedded-opentype"),url(/font/fontello.woff2?40884483) 
-    format("woff2"),url(/font/fontello.woff?40884483) 
-    format("woff"),url(/font/fontello.ttf?40884483) format("truetype"),
-    url(/font/fontello.svg?40884483#fontello) format("svg");
-    font-weight:400;
-    font-style:normal
 }
 
 body {
@@ -167,18 +104,7 @@ body h1 {
  *  Email: dave@fontawesome.io
  *  Twitter: http://twitter.com/davegandy
  *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
- */@font-face {
-    font-family:FontAwesome;
-    src:url(../font/fontawesome-webfont.eot?v=3.2.1);
-    src:url(../font/fontawesome-webfont.eot?#iefix&v=3.2.1) 
-    format("embedded-opentype"),
-    url(../font/fontawesome-webfont.woff?v=3.2.1) 
-    format("woff"),url(../font/fontawesome-webfont.ttf?v=3.2.1) 
-    format("truetype"),url(../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) 
-    format("svg");
-    font-weight:400;
-    font-style:normal
-}
+ */
 
 [class*=" icon-"],
 [class^=icon-] {
@@ -213,21 +139,6 @@ body h1 {
     background-position:0 0;
     background-repeat:repeat;
     margin-top:0
-}
-
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^=icon-],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^=icon-],
-.dropdown-submenu:hover > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^=icon-],
-.icon-white, .nav-list > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^=icon-],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-pills > .active > a > [class^=icon-],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^=icon-] {
-    background-image:none
 }
 
 .icon-time:before {
