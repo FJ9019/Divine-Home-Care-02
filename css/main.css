@@ -900,13 +900,21 @@ h3 {
 /* =============== End Home CSS ================== */
 
 /* Features */
-
-
+.text-center {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 200px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20 0;
+}
+h1 {
+    margin-bottom: 30px;
+}
 .our-team-main
 {
 	width:100%;
 	height:auto;
-	border-bottom:5px #323233 solid;
+	border-bottom:5px #B0C4DE solid;
 	background:#fff;
 	text-align:center;
 	border-radius:10px;
@@ -944,7 +952,7 @@ h3 {
 	left:0;
 	padding:5px 15px 0 15px;
 	text-align:left;
-	background:#fff;
+	background: #FAF0E6;
 	
 }
 
@@ -954,7 +962,7 @@ h3 {
 	height:auto;
 	position:relative;
 	z-index:10;
-	background:#fff;
+	background:#FAF0E6;
 	padding:15px;
 	bottom:0px;
 	transition: all 0.5s ease;
@@ -973,9 +981,6 @@ h3 {
 }
 
 /*our-team-main*/
-
-
-
 /* End Features */
 
 /* Footer */
@@ -989,7 +994,7 @@ h3 {
     text-align: left;
     font: normal 16px sans-serif;
     padding: 45px 50px;
-    margin-top: 100%;
+    margin-top: 10%;
   }
   
   .footer-distributed .footer-left p {
