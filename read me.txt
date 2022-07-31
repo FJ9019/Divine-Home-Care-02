@@ -6,7 +6,7 @@ Text color: A6A6A6
 
 .fa color : 87CEEB
 
-Header & Footer :  48D1CC
+Header & Footer :  B0C4DE
 
 nav-active :  DC143C
 
