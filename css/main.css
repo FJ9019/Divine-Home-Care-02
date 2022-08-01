@@ -874,21 +874,26 @@ header .contact-button {
 
 /* =============== Home CSS ================== */
 
-h3 {
+.primary-content h3 {
     font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #02b8dd;
+    margin: 0 0 20px 0;
 }
-#primary-content {
+.primary-content {
     padding: 60px 0;
     text-align: center;
 }
-#primary-content h3 {
+.primary-content h3 {
     display: block;
     margin: 0 auto 20px auto;
-    width: 400px;
-    border-bottom: 1px solid #02b8dd;
-    padding: 0 0 20px 0;
+    width: 300px;
 }
 
+.primary-content p {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 
 
@@ -980,138 +985,159 @@ h1 {
 
 /* Footer */
 
-
-footer {
-    position: bottom;
-    bottom: 0px;
+footer{
+    position:absolute;
+    bottom: 100;
     width: 100%;
-    background: #B0C4DE;
-    position: left;
+    background-color: #B0C4DE;
 }
 
-.main-content {
+.f-container{
     display:flex;
-    left: -50px;
-}
- 
-.main-content .box {
-    flex-basis: 30%;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
-.box h2 {
+.f-container .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.section h2{
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.center-box {
-    
-}
-
-.center-box .box {
-    flex-basis: 30%;
-    padding: 0px 20px 20px 0px;
-    left: 30px;
-    right: 30px;
-}
-
-.box .content {
-    margin: 20px 0 0 0;
+.section .content{
+    margin:20px 0 0 0;
     position: relative;
 }
 
-.box .content:before {
+.section .content::before{
     position: absolute;
     content: '';
     top: -10px;
     height: 2px;
     width: 100%;
-    background: #DC143C;
 }
 
-.box .content:after {
+.section .content::after{
     position: absolute;
     content: '';
     height: 2px;
     width: 15%;
-    background: #f12020;
+    background-color: #DC143C;
     top: -10px;
 }
 
-.left .content p {
-    text-align: justify;
-}
 
-.left .content .social {
+.left .content .social{
     margin: 20px 0 0 0;
 }
 
-.left .content .social a {
+.left .content .social a{
     padding: 0 2px;
 }
 
-.left .content .social a span {
+.left .content .social a span{
     height: 40px;
     width: 40px;
-    background: #fff;
+    background: transparent;
     line-height: 40px;
     text-align: center;
     font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
 }
 
-.left .content .social a span:hover {
-    background: #f12020;
+
+.left .content .social a span:hover{
+    background: #DC143C;
 }
 
-.center .content .fas {
-    font-size: 1.4375rem;
-    background: #fff;
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
     height: 45px;
     width: 45px;
     line-height: 45px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 50px;
     transition: 0.3s;
     cursor: pointer;
+    border:1px solid #656565;
 }
 
-.center .content .fas:hover {
-    background: #f12020;
+.center .content .fas:hover{
+    background: #DC143C;
+    border:1px solid #DC143C;
 }
 
 .center .content .text{
-    font-size: 1.0625rem;
+    font-size: 1.0.6rem;
     font-weight: 500;
     padding-left: 10px;
 }
 
-.center .content .phone {
+.center .content .phone{
     margin: 15px 0;
 }
 
-.center .box {
-    text-align: center;
+
+
+
+.right form .btn button:hover{
+    background: #000;
 }
 
-
-@media screen and (max-width: 900px) {
-
-footer {
-    position: relative;
-    bottom: 0px;
+.footer-bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
 }
 
-.main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
+.f-container
+.siteFooterBar {
+    bottom: 0;
+    padding-top: 50px;
+    width: 100%;
+    height: 82px;
 }
 
-.main-content .box {
-    margin: 5px 0;
+.content {
+    display: block;
+    padding: 0px;
+    width:250px;
 }
+
+.content img {
+    height:82px;
+    width: 112px;
+    float:right;
+    margin-left: 20%;
+   }
+
+@media screen and (max-width:700px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+
+    .left .content{
+        padding-right:0px;
+        padding-bottom: 30px;
+    }
+
+    .f-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:0.5rem;
+    }
+
+    .f-container .section{
+        margin:5px 0;
+    }
 }
 
 
