@@ -874,28 +874,13 @@ header .contact-button {
 
 /* =============== Home CSS ================== */
 
-.primary-content h3 {
-    font-size: 30px;
+.container-xxl {
     text-align: center;
-    border-bottom: 1px solid #02b8dd;
-    margin: 0 0 20px 0;
-}
-.primary-content {
-    padding: 60px 0;
-    text-align: center;
-}
-.primary-content h3 {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 300px;
 }
 
-.primary-content p {
-    text-align: center;
+.container-xxl p {
     margin-bottom: 20px;
 }
-
-
 
 /* =============== End Home CSS ================== */
 
