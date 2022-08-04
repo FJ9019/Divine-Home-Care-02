@@ -48,6 +48,24 @@ body h1 {
     font-size:42px!important
 }
 
+h4, .h4 {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 1200px) {
+    h4, .h4 {
+      font-size: calc(1.275rem + 0.3vw) ;
+    }
+  }
+  
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6, .h6 {
+    font-size: 1rem;
+  }
+
 .basic-button,
 .basic-button-red {
     background-color:#2e9dd1;
@@ -873,62 +891,315 @@ header .contact-button {
 }
 
 /* About */
-div .section-padding {
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
+/******* Bootstrap Theming ********/
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 
-h2 {
-    font-size: var(--h2-font-size);
-    text-transform: uppercase;
-    margin-top: 60px;
-}
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  
+  @media (min-width: 768px) {
+    .col-md {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .row-cols-md-1 > * {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .row-cols-md-2 > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .row-cols-md-3 > * {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .row-cols-md-4 > * {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .row-cols-md-5 > * {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .row-cols-md-6 > * {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+    .col-md-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
+    .col-md-1 {
+      flex: 0 0 8.33333%;
+      max-width: 8.33333%;
+    }
+    .col-md-2 {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .col-md-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .col-md-5 {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-md-7 {
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
+    }
+    .col-md-8 {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+    }
+    .col-md-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    .col-md-10 {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+    }
+    .col-md-11 {
+      flex: 0 0 91.66667%;
+      max-width: 91.66667%;
+    }
+    .col-md-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
 }
+  
+  @media (min-width: 992px) {
+    .col-lg {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .row-cols-lg-1 > * {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .row-cols-lg-2 > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .row-cols-lg-3 > * {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .row-cols-lg-4 > * {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .row-cols-lg-5 > * {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .row-cols-lg-6 > * {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+    .col-lg-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
+    .col-lg-1 {
+      flex: 0 0 8.33333%;
+      max-width: 8.33333%;
+    }
+    .col-lg-2 {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+    .col-lg-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .col-lg-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .col-lg-5 {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    .col-lg-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }}
 
-div .featured-circle {
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 50px;
-}
+  @media (min-width: 1200px) {
+    .col-xl {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .row-cols-xl-1 > * {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .row-cols-xl-2 > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .row-cols-xl-3 > * {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .row-cols-xl-4 > * {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .row-cols-xl-5 > * {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .row-cols-xl-6 > * {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+    .col-xl-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
+    .col-xl-1 {
+      flex: 0 0 8.33333%;
+      max-width: 8.33333%;
+    }
+    .col-xl-2 {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+    .col-xl-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .col-xl-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .col-xl-5 {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    .col-xl-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-xl-7 {
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
+    }
+    .col-xl-8 {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+    }
+    .col-xl-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    .col-xl-10 {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+    }
+    .col-xl-11 {
+      flex: 0 0 91.66667%;
+      max-width: 91.66667%;
+    }
+    .col-xl-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .offset-xl-0 {
+      margin-left: 0;
+    }
+    .offset-xl-1 {
+      margin-left: 8.33333%;
+    }
+    .offset-xl-2 {
+      margin-left: 16.66667%;
+    }
+    .offset-xl-3 {
+      margin-left: 25%;
+    }
+    .offset-xl-4 {
+      margin-left: 33.33333%;
+    }
+    .offset-xl-5 {
+      margin-left: 41.66667%;
+    }
+    .offset-xl-6 {
+      margin-left: 50%;
+    }
+    .offset-xl-7 {
+      margin-left: 58.33333%;
+    }
+    .offset-xl-8 {
+      margin-left: 66.66667%;
+    }
+    .offset-xl-9 {
+      margin-left: 75%;
+    }
+    .offset-xl-10 {
+      margin-left: 83.33333%;
+    }
+    .offset-xl-11 {
+      margin-left: 91.66667%;
+    }
+  }  
 
-div .featured-text {
-    font-size: var(--h6-font-size);
-    line-height: 2rem;
-    font-weight: var(--font-weight-bold);
-    text-align: center;
-    margin-bottom: 0;
+  
+  /********** Custom CSS ************/
+  h1,
+  h2,
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+  
+.mb-3 {
+    margin-top: 10px;
 }
+  
+  @media (min-width: 992px) {
+    .about-text {
+      margin-left: -120px;
+    }
+  }
 
-div .featured-number {
-    color: var(--primary-color);
-    font-size: 8rem;
-    margin: 0 10px;
-}
-
-.gallery img {
-    margin-top: 80px;
-    margin-bottom: 60px;
-}
+  .img-fluid {
+    margin-top: 14px;
+  }
+  
 /* End About */
 
 
 /* Footer */
 
 footer {
-    position:absolute;
+    position:relative;
     bottom: 100;
     width: 100%;
     background-color: #B0C4DE;
+    margin-top: 50px;
 }
 
 .f-container {
@@ -1047,7 +1318,7 @@ footer {
 }
 
 div .picture-right {
-    position:
+    position:none;
 }
 
 @media screen and (max-width:700px){
