@@ -5,11 +5,13 @@
         <title>Divine Home Care</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" media="all" href="/css/contact.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" media="all" href="/css/main.css">
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -41,11 +43,11 @@
                                 <li class="nav-item" id="services">
                                     <a class="nav-link" data-scroll-target=".features-what-we-do" target="" href="services.html" >SERVICES</a>
                                 </li>
-                                <li class="nav-item" id="careers">
+                                <li class="nav-item nav-active" id="careers">
                                     <a class="nav-link" href="career.html">CAREERS</a>
                                 </li>
                             
-                                <li class="nav-item  nav-active d-sm-block d-md-none" id="contact">
+                                <li class="nav-item d-sm-block d-md-none" id="contact">
                                     <a class="nav-link" data-scroll-target=".contacts" href="#">CONTACT US</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
@@ -96,14 +98,14 @@
         
         <div class="container-fluid banner">
     <div class="banner-overlay d-flex flex-column justify-content-center align-items-center">
-        <div class="banner-content-title">Home Care With A Smile</div>
+        <div class="banner-content-title">Divine Home Care Services, LLC</div>
         <div class="banner-content-desc">Simple solutions to help you with  your home healthcare needs</div>
     </div>
 </div>
 <div class="container container-xs-md px-3 px-lg-6 banner-contact-section">
     <section class="row">
         <div class="col-md col-12 white-contact-box d-flex align-items-center">
-            <div class="contact-icon"><span class="icon-phone icon-large"></span></div>
+            <i class="contact-icon"><span class="icon-phone icon-large"></span></i>
             <div class="contact-desc">561 264 3360</div>
         </div>
         <div class="col-md col-12 green-contact-box d-flex align-items-center">
@@ -114,106 +116,83 @@
             <div class="contact-icon"><span class="icon-map-marker icon-large"></span></div>
                     <div class="contact-desc">6870 N Federal Hwy, 
                         <br>Boca Raton,
-                        <br>FL 33487</div> 
+                        <br>FL, 33487</div> 
                 </div>
         </div>
     </section>
 </div>
 
-        <div class="container container-xs-md px-3 px-lg-6 features page-section">
 
 </div>
 
+<!-- Home -->
+
+<!-- End Home -->
 
 
+<!-- Features -->
 
-        <div class="container-fluid contacts" data-target="contact-us">
-    <div class="row">
-        <section class="col-6 contact-image d-none d-md-block">
-            
-        </section>
-        <section class="col contact-col contact-form">
-            <div class="contact-form-subtitle">Like to hear more?</div>
-            <div class="contact-form-title">
-                <h1>Contact Us</h1>
+<!-- End Features -->
+
+<!-- Footer -->     
+<footer>
+    <div class="f-container">
+        <div class="left section">
+            <h2>About Us</h2>
+            <div class="content">
+                <p>My name is Odile, and I am a registered nurse with over 15 years of experience. I have worked as a nurse educator in nursing homes, assisted living, home health care, rehabilitation, and hospitals...</p>
+            <div class="social">
+                <a href=""><span class="fab fa-facebook-f"></span></a>
+                <a href=""><span class="fab fa-instagram"></span></a>
+                <a href=""><span class="fab fa-twitter"></span></a>
             </div>
-            <div class="contact-form-form row">
-                <div class="col-md-6">
-                    <input type="text"  placeholder="First Name" id="fName" />
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="Last Name" id="lName" />
-                </div>
-                <div class="col-md-6 landscape-mode">
-                    <input placeholder="Email" type="email" id="email" />
-                </div>
-                <div class="select-wrapper col-md-6 landscape-mode">
-                    <select id="subject">
-                        <option value="Discharge Planning">Discharge Planning</option>
-                        <option value="Software">Software</option>
-                        <option value="Request Care">Request Care</option>
-                        <option value="Career Opportunities">Career Opportunities</option>
-                        <option value="Complaints">Complaints</option>
-                        <option value="Something Else">Something Else</option>
-                    </select>
-                </div>
-                <div class="col-md-12">
-                    <textarea id="message" class="col" placeholder="Message" rows="4"  style="resize: none;"></textarea>
-                </div>
-
             </div>
-            <div class="info-box error-message success-message"></div>
-            <section class="button-wrapper">
-                <span class="basic-button-red" id="btn-contact-submit" data-submit='false'>SEND MESSAGE</span>
-            </section>
-        </section>
+        </div>
+
+        <div class="center section">
+            <h2>Contact Us</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">6870 N Federal Hwy</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">561 264 3360</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">odile@mydivinecare.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-right">
+            <img src="/images/Logo for site.png" class="" alt="...">
+          </div>    
     </div>
-</div> 
-        <footer class="container-fluid">
-    <section class="row px-lg-6">
-        <div class="col-md-2 col-6">
-            <div class="logo-box">
-                <img src="/images/New Logo.png" width="100px" height="78px" />
-            </div>
-        </div>
-        <div class="col-md-3 d-none d-md-block">
-            <div class="footer-title">Useful Links</div>
-            <div>
-                <ul class="links">
-                    <li><a href="#">Careers</a></li>
-                    <li data-scroll-target=".contacts">Contact Us</li>
-                    <li>Privacy Policy</li>
-                    <li>Cookies Policy</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 col">
-            <div class="footer-title">Contact Us</div>
-            <div class="contacts_wrap">
-                <div class="contacts_info">
-                    <span class="contacts_address">6870 N Federal Hwy,
-                        <br>
-                        Boca Raton, FL 33487</span>
-                        <span class="contacts_phone">Fax: 386 463 5395</span>
-                        <span class="contacts_phone">Phone: 561 264 3360</span>
-                        <span class="contacts_phone">Tol Free: 1888 793 8422</span>
-            </div>
-        </div>
-        <div class="col d-none d-md-block">
-            <div class="footer-disclaimer">Divine Care office is independently owned and operated.
-                Services may vary by location in compliance with state licensing requirements.</div>
-            
-        </div>
-    </section>
-    
-</footer>
-<section class="footer-base container-fluid px-lg-6">
-    <span class="copyright">Divine Care © 2022 All rights reserved.</span>
-</section>
-    </body>
 
-    <script src="/js/jquery.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <div class="footer-bottom">
+        <center>
+            <div><a href="">© 2022 | All Rights Reserved | Made By Jerry Fenelus</a></div>
+        </center>
+    </div>
+</footer>
+<!-- End Footer -->  
+
+
+</body>
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<!-- Script -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js" integrity="sha512-TXHaOs+47HgWwY4hUqqeD865VIBRoyQMjI27RmbQVeKb1pH1YTq0sbuHkiUzhVa5z0rRxG8UfzwDjIBYdPDM3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/bootstrap.min.js"></script>
 </html>
