@@ -856,7 +856,6 @@ header .contact-button {
     margin: 0 -2px;
     padding: 20px;
     box-sizing: border-box;
-    cursor: pointer;
     transition: 0.4s;
   }
   .service:hover{
@@ -911,6 +910,7 @@ h4 {
 .how-img img {
     width: 80%;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 /* End Services */
