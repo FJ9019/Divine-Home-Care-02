@@ -1191,6 +1191,23 @@ header .contact-button {
   
 /* End About */
 
+/* Our Mission */
+.container-mission {
+    width: 40%;
+    margin-left: 150px;
+    margin-bottom: 0px;
+}
+
+.mission h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mission p {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+/* End Mission */
 
 /* Footer */
 
@@ -1199,7 +1216,7 @@ footer {
     bottom: 100;
     width: 100%;
     background-color: #B0C4DE;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .f-container {
