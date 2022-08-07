@@ -956,9 +956,7 @@ h1 {
 /* End Features */
 
 /* Footer */
-div a {
-    text-decoration: underline;
-}
+
 footer{
     position:absolute;
     bottom: 100;
