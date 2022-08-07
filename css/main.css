@@ -886,7 +886,7 @@ header .contact-button {
 
 /* Features */
 .text-center {
-    display: block;
+    display:none;
     margin: 0 auto 20px auto;
     width: 200px;
     border-bottom: 1px solid #02b8dd;
@@ -897,7 +897,7 @@ h1 {
 }
 .our-team-main
 {
-	width:100%;
+	width:98%;
 	height:auto;
 	border-bottom:5px #B0C4DE solid;
 	background:#fff;
@@ -905,16 +905,18 @@ h1 {
 	border-radius:10px;
 	overflow:hidden;
 	position:relative;
-	transition:0.5s;
 	margin-bottom:28px;
 }
 
+.team-front img {
+    margin-top: 40px;
+}
 
 .our-team-main img
 {
 	border-radius:50%;
 	margin-bottom:20px;
-	width: 90px;
+	width: 50px;
 }
 
 .our-team-main h3
@@ -937,8 +939,6 @@ h1 {
 	left:0;
 	padding:5px 15px 0 15px;
 	text-align:left;
-	background: #FAF0E6;
-	
 }
 
 .team-front
@@ -947,29 +947,18 @@ h1 {
 	height:auto;
 	position:relative;
 	z-index:10;
-	background:#FAF0E6;
 	padding:15px;
 	bottom:0px;
-	transition: all 0.5s ease;
 }
 
-.our-team-main:hover .team-front
-{
-	bottom:-200px;
-	transition: all 0.5s ease;
-}
-
-.our-team-main:hover
-{
-	border-color:#777;
-	transition:0.5s;
-}
 
 /*our-team-main*/
 /* End Features */
 
 /* Footer */
-
+div a {
+    text-decoration: underline;
+}
 footer{
     position:absolute;
     bottom: 100;
@@ -1069,18 +1058,15 @@ footer{
     margin: 15px 0;
 }
 
-
-
-
 .right form .btn button:hover{
     background: #000;
 }
 
-.footer-bottom center{
+.footer-bottom center {
     padding: 5px;
     font-size: 0.9375rem;
     background: #151515;
-    text-decoration: underline;
+    text-decoration:none!important;
 }
 
 .f-container

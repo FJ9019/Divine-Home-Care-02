@@ -1033,7 +1033,7 @@ footer{
     padding: 5px;
     font-size: 0.9375rem;
     background: #151515;
-    text-decoration: underline;
+    text-decoration: none!important;
 }
 
 .f-container

@@ -803,7 +803,7 @@ header .contact-button {
 }
 
 .banner {
-    background-image:url(../images/home1_sl3.jpg);
+    background-image:url(../images/home1_sl1.jpg);
     background-size:cover;
     height:600px;
     padding:0!important
@@ -1318,7 +1318,7 @@ footer {
     padding: 5px;
     font-size: 0.9375rem;
     background: #151515;
-    text-decoration: underline;
+    text-decoration: none!important;
 }
 
 .siteFooterBar {
