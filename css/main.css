@@ -892,12 +892,13 @@ header .contact-button {
     border-bottom: 1px solid #02b8dd;
     padding: 0 0 20 0;
 }
+
 h1 {
     margin-bottom: 30px;
 }
-.our-team-main
-{
-	width:98%;
+
+.our-team-main {
+	width:100%;
 	height:auto;
 	border-bottom:5px #B0C4DE solid;
 	background:#fff;
@@ -909,29 +910,29 @@ h1 {
 }
 
 .team-front img {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-.our-team-main img
-{
+.our-team-main img {
 	border-radius:50%;
 	margin-bottom:20px;
 	width: 50px;
 }
 
-.our-team-main h3
-{
+.team-front {
+    margin-top: 52px;
+}
+
+.our-team-main h3 {
 	font-size:20px;
 	font-weight:700;
 }
 
-.our-team-main p
-{
+.our-team-main p {
 	margin-bottom:0;
 }
 
-.team-back
-{
+.team-back {
 	width:100%;
 	height:auto;
 	position:absolute;
@@ -941,8 +942,7 @@ h1 {
 	text-align:left;
 }
 
-.team-front
-{
+.team-front {
 	width:100%;
 	height:auto;
 	position:relative;
@@ -957,35 +957,35 @@ h1 {
 
 /* Footer */
 
-footer{
+footer {
     position:absolute;
     bottom: 100;
     width: 100%;
     background-color: #B0C4DE;
 }
 
-.f-container{
+.f-container {
     display:flex;
     padding: 10px;
 }
 
-.f-container .section{
+.f-container .section {
     flex-basis: 50%;
     padding: 0 20px;
 }
 
-.section h2{
+.section h2 {
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.section .content{
+.section .content {
     margin:20px 0 0 0;
     position: relative;
 }
 
-.section .content::before{
+.section .content::before {
     position: absolute;
     content: '';
     top: -10px;
@@ -993,7 +993,7 @@ footer{
     width: 100%;
 }
 
-.section .content::after{
+.section .content::after {
     position: absolute;
     content: '';
     height: 2px;
@@ -1003,15 +1003,15 @@ footer{
 }
 
 
-.left .content .social{
+.left .content .social {
     margin: 20px 0 0 0;
 }
 
-.left .content .social a{
+.left .content .social a {
     padding: 0 2px;
 }
 
-.left .content .social a span{
+.left .content .social a span {
     height: 40px;
     width: 40px;
     background: transparent;
@@ -1024,11 +1024,11 @@ footer{
 }
 
 
-.left .content .social a span:hover{
+.left .content .social a span:hover {
     background: #DC143C;
 }
 
-.center .content .fas{
+.center .content .fas {
     font-size: 1.1rem;
     background: transparent;
     height: 45px;
@@ -1041,22 +1041,22 @@ footer{
     border:1px solid #656565;
 }
 
-.center .content .fas:hover{
+.center .content .fas:hover {
     background: #DC143C;
     border:1px solid #DC143C;
 }
 
-.center .content .text{
+.center .content .text {
     font-size: 1.0.6rem;
     font-weight: 500;
     padding-left: 10px;
 }
 
-.center .content .phone{
+.center .content .phone {
     margin: 15px 0;
 }
 
-.right form .btn button:hover{
+.right form .btn button:hover {
     background: #000;
 }
 
@@ -1092,25 +1092,26 @@ div .picture-right {
 }
 
 @media screen and (max-width:700px){
-    footer{
-        position: relative;
-        bottom: 0px;
-    }
+    
+footer {
+    position: relative;
+    bottom: 0px;
+}
 
-    .left .content{
-        padding-right:0px;
-        padding-bottom: 30px;
-    }
+.left .content {
+    padding-right:0px;
+    padding-bottom: 30px;
+}
 
-    .f-container{
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding:0.5rem;
-    }
+.f-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:0.5rem;
+}
 
-    .f-container .section{
-        margin:5px 0;
-    }
+.f-container .section {
+    margin:5px 0;
+}
 }
 
 /* End Footer */
