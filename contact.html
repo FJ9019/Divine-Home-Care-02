@@ -7,8 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" media="all" href="/css/contact.css">
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,7 +48,7 @@
                                 </li>
                             
                                 <li class="nav-item  nav-active d-sm-block d-md-none" id="contact">
-                                    <a class="nav-link" data-scroll-target=".contacts" target="_blank" href="contact.html">CONTACT US</a>
+                                    <a class="nav-link" data-scroll-target="contacts.html" target="_blank" href="contact.html">CONTACT US</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -127,48 +129,80 @@
 
 
 
-    <div class="container-fluid contacts" data-target="contact-us">
-    <div class="row">
-        <section class="col-6 contact-image d-none d-md-block">
-            
-        </section>
-        <section class="col contact-col contact-form">
-            <div class="contact-form-subtitle">Like to hear more?</div>
-            <div class="contact-form-title">
-                <h1>Contact Us</h1>
-            </div>
-            <div class="contact-form-form row">
-                <div class="col-md-6">
-                    <input type="text"  placeholder="First Name" id="fName" />
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="Last Name" id="lName" />
-                </div>
-                <div class="col-md-6 landscape-mode">
-                    <input placeholder="Email" type="email" id="email" />
-                </div>
-                <div class="select-wrapper col-md-6 landscape-mode">
-                    <select id="subject">
-                        <option value="Discharge Planning">Discharge Planning</option>
-                        <option value="Software">Software</option>
-                        <option value="Request Care">Request Care</option>
-                        <option value="Career Opportunities">Career Opportunities</option>
-                        <option value="Complaints">Complaints</option>
-                        <option value="Something Else">Something Else</option>
-                    </select>
-                </div>
-                <div class="col-md-12">
-                    <textarea id="message" class="col" placeholder="Message" rows="4"  style="resize: none;"></textarea>
-                </div>
+<!-- partial:index.partial.html -->
+<section id="contact">
+  
+    <h1 class="section-header">Contact</h1>
+    
+    <div class="contact-wrapper">
+    
+    <!-- Left contact page --> 
+      
+      <form id="contact-form" class="form-horizontal" role="form">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+          </div>
+        </div>
 
+        <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
             </div>
-            <div class="info-box error-message success-message"></div>
-            <section class="button-wrapper">
-                <span class="basic-button-red" id="btn-contact-submit" data-submit='false'>SEND MESSAGE</span>
-            </section>
-        </section>
+          </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+          </div>
+        </div>
+  
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        
+        <button class="btn send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">6870 N Federal Hwy</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">561 264 3360</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text divinecare"><a href="mailto:#" title="Send me an email">odile@mydivinecare.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>     
+          </ul>
+          <hr>
+
+  
+        </div>
+      
     </div>
-</div> 
+    
+  </section>
+
 <!-- Footer -->
 
 <footer>
@@ -218,17 +252,11 @@
 
     </body>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js" integrity="sha512-TXHaOs+47HgWwY4hUqqeD865VIBRoyQMjI27RmbQVeKb1pH1YTq0sbuHkiUzhVa5z0rRxG8UfzwDjIBYdPDM3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/bootstrap.min.js"></script>
+     <!-- partial -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="/js/jquery.min.js"></script>
+     <script src="/js/app.js"></script>
+
+     <script src="/js/bootstrap.min.js"></script>
 </html>

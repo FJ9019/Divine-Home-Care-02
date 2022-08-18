@@ -4,7 +4,7 @@ String.prototype.includes||(String.prototype.includes=function(e,a){"use strict"
 return"number"!=typeof a&&(a=0),!(a+e.length>this.length)&&-1!==this.indexOf(e,a)}),
 $(document).ready(function(){var e=window.location.hash;void 0!==e&&void 0!==(e=e
     .includes("about")?".green-feature-box":e.includes("services")?".features-what-we-do":e
-    .includes("contact")?".contacts":void 0)&&$("html, body").animate({scrollTop:$(e).offset()
+    .includes("contact")?".contact":void 0)&&$("html, body").animate({scrollTop:$(e).offset()
     .top},1e3)}),$(document).on("click","[data-scroll-target]",function(e){topVal=isSticky?
         $(this.dataset.scrollTarget).offset().top-stickyNavHeight:$(this.dataset.scrollTarget)
         .offset().top-$(".header-info-section").height()-stickyNavHeight,$("html,body")
@@ -21,7 +21,7 @@ $(document).ready(function(){var e=window.location.hash;void 0!==e&&void 0!==(e=
             "visible");if(void 0===a.message||""===a.message.trim())return 
             e.text("Invalid Message. Please check your input"),e.addClass("error-message"),void 
             e.css("visibility","visible");$(this).attr("data-submit",!0),$.ajax({type:"POST",
-            url:"https://www.mydivinecare.com/web-api/portal/open/v1/contact",data:JSON.stringify(a),
+            url:"https://www.mydivinecare.com/contact.html",data:JSON.stringify(a),
             contentType:"application/json; charset=utf-8",success:function(){e.text("Successfully Posted your Message"),
             e.removeClass("error-message"),e.addClass("success-message"),e.css("visibility","visible"),$("#fName")
             .val(""),$("#lName").val(""),$("#email").val(""),$("#message").val(""),$(this).val("")}})}}),
@@ -37,9 +37,9 @@ $(document).ready(function(){var e=window.location.hash;void 0!==e&&void 0!==(e=
                 .removeClass("nav-active"),nav.children("#aboutus").addClass("nav-active"),this.window.location.hash=nav
                 .children("#aboutus").children(0).attr("target"),$(".btn-scroll-to-top").css("opacity","1"),
                 $(".btn-scroll-to-top").css("bottom","2em")):$window.scrollTop()>=$(".features-what-we-do")
-                .offset().top-marginedNavHeight&&$window.scrollTop()<=$(".contacts").offset().top-marginedNavHeight?(nav
+                .offset().top-marginedNavHeight&&$window.scrollTop()<=$(".contact").offset().top-marginedNavHeight?(nav
                 .children().removeClass("nav-active"),nav.children("#services").addClass("nav-active"),this.window
-                .location.hash=nav.children("#services").children(0).attr("target")):$window.scrollTop()>=$(".contacts")
+                .location.hash=nav.children("#services").children(0).attr("target")):$window.scrollTop()>=$(".contact")
                 .offset().top-marginedNavHeight?(nav.children().removeClass("nav-active"),nav.children("#contact")
-                .addClass("nav-active"),this.window.location.hash=$(".contacts").data("target")):nav.children()
+                .addClass("nav-active"),this.window.location.hash=$(".contact").data("target")):nav.children()
                 .removeClass("nav-active")});
