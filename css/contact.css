@@ -729,7 +729,14 @@ header nav .nav-menu
 header .contact-button {
     height:45px;
     margin-top:auto;
-    margin-bottom:auto
+    margin-bottom:auto;
+    text-decoration: none!important;
+}
+
+header 
+.contact-button:hover {
+    color: red;
+    text-decoration: none!important;
 }
 
 .sticky-header {
@@ -738,9 +745,36 @@ header .contact-button {
 }
 
 .sticky-header a {
-    color:#fff!important
+    color:#fff!important;
 }
 
+.btn-scroll-to-top {
+    font-family:fontello;
+    opacity:1;
+    bottom:2em;
+    right:2em;
+    position:fixed;
+    z-index:100001;
+    width:3em;
+    height:3em;
+    line-height:3em;
+    text-align:center;
+    color:#fff;
+    background-color:#2e9dd1;
+    cursor:pointer;
+    transition:all .4s ease;
+    border-radius:50%;
+    opacity:0
+}
+
+.btn-scroll-to-top:hover {
+    color:#fff;
+    text-decoration:none
+}
+
+.btn-scroll-to-top:before {
+    content:"\e92c"
+}
 .banner {
     background-image:url(../images/home1_sl4.jpg);
     background-size:cover;
@@ -836,7 +870,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: transparent;
-    padding-bottom: 100px;
     font-family: 'Robot';
   }
   
@@ -850,7 +883,7 @@ body {
     margin: 0 auto;
     padding: 40px 0;
     font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
+    color: #B0C4DE;
     text-transform: uppercase;
     letter-spacing: 6px;
   }
@@ -868,7 +901,7 @@ body {
   /* Left contact page */
   .form-horizontal {
     /*float: left;*/
-    max-width: 400px;
+    max-width: 390px;
     font-family: 'Lato';
     font-weight: 400;
   }
@@ -884,15 +917,15 @@ body {
   .send-button {
     margin-top: 15px;
     height: 34px;
-    width: 400px;
+    width: 390px;
     border-color: #87CEEB;
     overflow: hidden;
     transition: all .2s ease-in-out;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   
   .alt-send-button {
-    width: 400px;
+    width: 100%;
     height: 34px;
     color: red;
     transition: all .2s ease-in-out;
@@ -911,7 +944,7 @@ body {
   
   /* Begin Right Contact Page */
   .direct-contact-container {
-    max-width: 400px;
+    max-width: 100%;
   }
   
   /* Location, Phone, Email Section */

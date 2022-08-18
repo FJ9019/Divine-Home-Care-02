@@ -729,7 +729,14 @@ header nav .nav-menu
 header .contact-button {
     height:45px;
     margin-top:auto;
-    margin-bottom:auto
+    margin-bottom:auto;
+    text-decoration: none!important;
+}
+
+header 
+.contact-button:hover {
+    color: red;
+    text-decoration: none!important;
 }
 
 .sticky-header {
@@ -738,9 +745,36 @@ header .contact-button {
 }
 
 .sticky-header a {
-    color:#fff!important
+    color:#fff!important;
 }
 
+.btn-scroll-to-top {
+    font-family:fontello;
+    opacity:1;
+    bottom:2em;
+    right:2em;
+    position:fixed;
+    z-index:100001;
+    width:3em;
+    height:3em;
+    line-height:3em;
+    text-align:center;
+    color:#fff;
+    background-color:#2e9dd1;
+    cursor:pointer;
+    transition:all .4s ease;
+    border-radius:50%;
+    opacity:0
+}
+
+.btn-scroll-to-top:hover {
+    color:#fff;
+    text-decoration:none
+}
+
+.btn-scroll-to-top:before {
+    content:"\e92c"
+}
 .banner {
     background-image:url(../images/home1_sl4.jpg);
     background-size:cover;

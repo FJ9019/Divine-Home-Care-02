@@ -762,7 +762,14 @@ header nav .nav-menu
 header .contact-button {
     height:45px;
     margin-top:auto;
-    margin-bottom:auto
+    margin-bottom:auto;
+    text-decoration: none!important;
+}
+
+header 
+.contact-button:hover {
+    color: red;
+    text-decoration: none!important;
 }
 
 .sticky-header {
@@ -771,7 +778,7 @@ header .contact-button {
 }
 
 .sticky-header a {
-    color:#fff!important
+    color:#fff!important;
 }
 
 .btn-scroll-to-top {
