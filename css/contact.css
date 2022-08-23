@@ -1149,6 +1149,7 @@ footer {
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: #037fc5;
 }
 
 .section .content {
@@ -1191,7 +1192,7 @@ footer {
     font-size: 18px;
     border-radius: 50px;
     transition: 0.4s;
-    border:1px solid #656565;
+    border:1px solid #037fc5;
 }
 
 
@@ -1209,12 +1210,12 @@ footer {
     border-radius: 50px;
     transition: 0.3s;
     cursor: pointer;
-    border:1px solid #656565;
+    border:1px solid #037fc5;
 }
 
 .center .content .fas:hover {
     background: #DC143C;
-    border:1px solid #DC143C;
+    border:1px solid #037fc5;
 }
 
 .center .content .text {
