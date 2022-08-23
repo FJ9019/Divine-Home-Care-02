@@ -12,4 +12,6 @@ nav-active :  DC143C
 
 Body Font :  'Robot'
 
+Text Footer : 037fc5
+
 

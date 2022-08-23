@@ -1219,17 +1219,15 @@ header
 /* Footer */
 
 footer {
-    position:relative;
+    position:absolute;
     bottom: 100;
     width: 100%;
     background-color: #B0C4DE;
-    margin-top: 80px;
 }
 
 .f-container {
     display:flex;
     padding: 10px;
-    margin-top: -50px;
 }
 
 .f-container .section {
@@ -1241,6 +1239,7 @@ footer {
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: #037fc5;
 }
 
 .section .content {
@@ -1265,6 +1264,7 @@ footer {
     top: -10px;
 }
 
+
 .left .content .social {
     margin: 20px 0 0 0;
 }
@@ -1282,8 +1282,9 @@ footer {
     font-size: 18px;
     border-radius: 50px;
     transition: 0.4s;
-    border:1px solid #656565;
+    border:1px solid #037fc5;
 }
+
 
 .left .content .social a span:hover {
     background: #DC143C;
@@ -1299,12 +1300,12 @@ footer {
     border-radius: 50px;
     transition: 0.3s;
     cursor: pointer;
-    border:1px solid #656565;
+    border:1px solid #037fc5;
 }
 
 .center .content .fas:hover {
     background: #DC143C;
-    border:1px solid #DC143C;
+    border:1px solid #037fc5;
 }
 
 .center .content .text {
@@ -1325,11 +1326,12 @@ footer {
     padding: 5px;
     font-size: 0.9375rem;
     background: #151515;
-    text-decoration: none!important;
+    text-decoration:none!important;
 }
 
+.f-container
 .siteFooterBar {
-    bottom: 50px;
+    bottom: 0;
     padding-top: 50px;
     width: 100%;
     height: 82px;
@@ -1341,33 +1343,39 @@ footer {
     width:250px;
 }
 
+@media screen and (max-width:700px){}
+
 div .picture-right {
-    position:none;
+    position:static;
+    width: 300px;
+    height: 100px;
+    right: -100px;
+    margin: 0 10px 0 10px;
     cursor: pointer;
 }
 
 @media screen and (max-width:700px){
-    footer{
-        position: relative;
-        bottom: 0px;
-    }
-
-    .left .content{
-        padding-right:0px;
-        padding-bottom: 30px;
-    }
-
-    .f-container{
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding:0.5rem;
-    }
-
-    .f-container .section{
-        margin:5px 0;
-    }
+    
+footer {
+    position: relative;
+    bottom: 0px;
 }
 
+.left .content {
+    padding-right:0px;
+    padding-bottom: 30px;
+}
+
+.f-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:0.5rem;
+}
+
+.f-container .section {
+    margin:5px 0;
+}
+}
 /* End Footer */
 
 
