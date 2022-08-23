@@ -500,8 +500,8 @@ h4, .h4 {
 .header-logo {
     display:block;
     margin:auto;
-    width:102px;
-    height:72px;
+    width:130px;
+    height:60px;
     transition:all .6s ease
 }
 
@@ -1201,7 +1201,7 @@ header
 /* Our Mission */
 .container-mission {
     width: 40%;
-    margin-left: 150px;
+    margin-left: 40%;
     margin-bottom: 0px;
 }
 
@@ -1343,6 +1343,7 @@ footer {
 
 div .picture-right {
     position:none;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px){

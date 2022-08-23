@@ -1264,6 +1264,7 @@ div .picture-right {
     height: 100px;
     right: -100px;
     margin: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px){

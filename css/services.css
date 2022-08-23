@@ -865,63 +865,74 @@ header
 /* End Banner */
 
 /* Services */
-.services{
+.services {
     background: transparent;
     text-align: center;
     margin-bottom: 15px;
-  }
-  .services h1{
+    width: 100%;
+    height: 80%;
+}
+
+.services h1 {
     display: inline-block;
     text-transform: uppercase;
     border-bottom: 4px solid #3498db;
     font-size: 20px;
     padding-bottom: 10px;
     margin-top: 40px;
-  }
-  .cen{
+}
+
+.cen {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
     padding: 20px;
-  }
-  .service{
+    width: 100%;
+    height: 180%;
+}
+
+.service {
     display: inline-block;
     width: calc(100% / 3);
+    height: calc(80% / 2);
     margin: 0 -2px;
     padding: 20px;
     box-sizing: border-box;
     transition: 0.4s;
-  }
-  .service:hover{
+}
+
+.service:hover {
     background: #ddd;
-  }
-  .service i{
-    color: #3498db;
-    font-size: 34px;
-    margin-bottom: 30px;
-  }
-  .service h2{
+}
+
+.service h2 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 500;
     margin: 0;
     margin-bottom: 15px;
-  }
-  .service p{
+}
+
+.service p {
     color: gray;
     font-size: 15px;
     font-weight: 500;
-  }
-  @media screen and (max-width: 800px) {
-    .service{
-      width: 50%;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .service{
-      width: 100%;
-    }
-  }
+    display: block;
+    top: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+.service {
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 500px) {
+.service {
+    width: 100%;
+}
+}
 
 h4 {
     margin-bottom: 10px;
@@ -1092,6 +1103,7 @@ div .picture-right {
     height: 100px;
     right: -100px;
     margin: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px){

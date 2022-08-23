@@ -483,8 +483,8 @@ body h1 {
 .header-logo {
     display:block;
     margin:auto;
-    width:102px;
-    height:72px;
+    width:130px;
+    height:60px;
     transition:all .6s ease
 }
 
@@ -907,7 +907,7 @@ h1 {
 
 .our-team-main {
 	width:100%;
-	height:auto;
+	height:82%;
 	border-bottom:5px #B0C4DE solid;
 	background:#fff;
 	text-align:center;
@@ -923,33 +923,38 @@ h1 {
 
 .our-team-main img {
 	border-radius:50%;
-	margin-bottom:100px;
+	margin-bottom:50px;
 	width: 50px;
 }
 
 .team-front {
-    margin-top: 52px;
+    margin-top: 0px;
 }
 
 .our-team-main h3 {
 	font-size:20px;
 	font-weight:700;
-    margin-top: -10px;
+    position:absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
 }
 
 .our-team-main p {
-	margin-bottom: 2px;
+	margin-bottom: 0;
+    position:absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
 }
 
 .team-back {
 	width:100%;
 	height:auto;
-	position:absolute;
 	top:0;
 	left:0;
-	padding:5px 15px 0 15px;
-	text-align:left;
-    margin-top: 110px;
+	text-align:center;
+    margin-bottom: 30px;
 }
 
 .team-front {
@@ -1099,6 +1104,7 @@ div .picture-right {
     height: 100px;
     right: -100px;
     margin: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px){
