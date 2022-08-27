@@ -37,7 +37,7 @@ ol,ul {
 }
 
 body {
-    font-family:'Robot';
+    font-family:sans-serif;
     font-size:100%;
     color:#878787;
     background-color:#f5f8fa;
@@ -50,21 +50,21 @@ body h1 {
 
 h4, .h4 {
     font-size: 1.5rem;
-  }
+}
   
-  @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     h4, .h4 {
       font-size: calc(1.275rem + 0.3vw) ;
     }
   }
   
-  h5, .h5 {
+h5, .h5 {
     font-size: 1.25rem;
-  }
+}
   
-  h6, .h6 {
+h6, .h6 {
     font-size: 1rem;
-  }
+}
 
 .basic-button,
 .basic-button-red {
@@ -126,7 +126,6 @@ h4, .h4 {
 
 [class*=" icon-"],
 [class^=icon-] {
-    font-family:FontAwesome;
     font-weight:400;
     font-style:normal;
     text-decoration:inherit;

@@ -39,7 +39,7 @@ ol,ul {
 }
 
 body {
-    font-family:montserrat;
+    font-family:sans-serif;
     font-size:100%;
     color:#878787;
     background-color:#f5f8fa
@@ -108,7 +108,6 @@ body h1 {
 
 [class*=" icon-"],
 [class^=icon-] {
-    font-family:FontAwesome;
     font-weight:400;
     font-style:normal;
     text-decoration:inherit;
@@ -727,6 +726,7 @@ header nav .nav-menu
 }
 
 header .contact-button {
+    font-family: sans-serif;
     height:45px;
     margin-top:auto;
     margin-bottom:auto;
@@ -741,7 +741,7 @@ header
 
 .sticky-header {
     padding-top:10px;
-    background-color:#B0C4DE
+    background-color:#B0C4DE;
 }
 
 .sticky-header a {
@@ -870,7 +870,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: transparent;
-    font-family: 'Robot';
   }
   
   #contact {
