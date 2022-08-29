@@ -8,23 +8,7 @@ $(document).ready(function(){var e=window.location.hash;void 0!==e&&void 0!==(e=
     .top},1e3)}),$(document).on("click","[data-scroll-target]",function(e){topVal=isSticky?
         $(this.dataset.scrollTarget).offset().top-stickyNavHeight:$(this.dataset.scrollTarget)
         .offset().top-$(".header-info-section").height()-stickyNavHeight,$("html,body")
-        .animate({scrollTop:topVal},2e3),$(".collapse").collapse("toggle")}),$("#btn-contact-submit")
-        .click(function(){var e=$(".info-box");e.removeClass("error-message"),e.removeClass("success-message"),
-        e.css("visibility","hidden"),e.text("");var a={firstName:$("#fName").val(),lastName:$("#lName")
-        .val(),message:$("#message").val(),subject:$("#subject").val(),email:$("#email").val()};
-        if(console.log($(this).attr("data-submit")),"true"!=$(this).attr("data-submit")){if(void 0===a
-            .firstName||""===a.firstName.trim())return e.text("Invalid First Name. Please check your input"),
-            e.addClass("error-message"),void e.css("visibility","visible");if(void 0===a.lastName||""===a
-            .lastName.trim())return e.text("Invalid Last Name. Please check your input"),e.addClass("error-message"),
-            void e.css("visibility","visible");if(void 0===a.email||""===a.email.trim()||!emailRegex.test(a.email))
-            return e.text("Invalid Email. Please check your input"),e.addClass("error-message"),void e.css("visibility",
-            "visible");if(void 0===a.message||""===a.message.trim())return 
-            e.text("Invalid Message. Please check your input"),e.addClass("error-message"),void 
-            e.css("visibility","visible");$(this).attr("data-submit",!0),$.ajax({type:"POST",
-            url:"https://www.mydivinecare.com/contact.html",data:JSON.stringify(a),
-            contentType:"application/json; charset=utf-8",success:function(){e.text("Successfully Posted your Message"),
-            e.removeClass("error-message"),e.addClass("success-message"),e.css("visibility","visible"),$("#fName")
-            .val(""),$("#lName").val(""),$("#email").val(""),$("#message").val(""),$(this).val("")}})}}),
+        .animate({scrollTop:topVal},2e3),$(".collapse").collapse("toggle")}),
             $window.scroll(function(){var e=$("#sticky-nav"),a=$(window).scrollTop();isSticky=50<=a?(
                 e.addClass("sticky-header"),!0):(e.removeClass("sticky-header"),!1),marginedNavHeight=0,$window
                 .scrollTop()<2?(this.window.location.hash="",nav.children().removeClass("nav-active"),
@@ -43,3 +27,52 @@ $(document).ready(function(){var e=window.location.hash;void 0!==e&&void 0!==(e=
                 .offset().top-marginedNavHeight?(nav.children().removeClass("nav-active"),nav.children("#contact")
                 .addClass("nav-active"),this.window.location.hash=$(".contact").data("target")):nav.children()
                 .removeClass("nav-active")});
+
+
+
+
+                document.querySelector('#contact-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    e.target.elements.name.value = '';
+                    e.target.elements.subject.value = '';
+                    e.target.elements.email.value = '';
+                    e.target.elements.message.value = '';
+                  });
+                
+                
+                
+                $(function (){
+                
+                       $('#contact-form').submit(function(e) {
+                
+                        e.preventDefault();
+                        var postdata = $('#contact-form').serialize();
+                
+                        $.ajax({
+                          type: 'POST',
+                          url: 'php/contact.php',
+                          data: postdata,
+                          dataType: 'json',
+                          success: function(result) {
+                            
+                            if(result.isSuccess)
+                            {
+                              $("#contact-form").append("p class='Thank you for contacting Divine Home Care'> We will get back to you shortly...</p>");
+                              $("#contact-form")[0].reset();
+                            }
+                
+                            else
+                            {
+                              $("#name").html(result.nameError);
+                              $("#subject").html(result.subjectError);
+                              $("#email").html(result.emailError);
+                              $("#message").html(result.messageError);
+                            }
+                
+                          }
+                
+                
+                        });
+                
+                       });
+                })
