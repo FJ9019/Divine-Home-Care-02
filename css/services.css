@@ -948,8 +948,14 @@ header
     margin-bottom: 15px;
 }
 
+#more {
+    display: none;
+}
+
 .service p {
     color: gray;
+    text-align: justify;
+    text-align: center;
     font-size: 15px;
     font-weight: 500;
     top: 0;
@@ -979,11 +985,11 @@ h4 {
 h5 {
     display:inline-block;
     position: relative;
-    text-align: center;
     text-align: justify;
     left: 17%;
     width: 70%;
     margin-bottom: 30px;
+    font-size: 18px;
 }
 .how-img {
     margin-bottom: 30px;
