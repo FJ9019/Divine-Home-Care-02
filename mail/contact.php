@@ -9,12 +9,13 @@ $m_subject = strip_tags(htmlspecialchars($_POST['subject']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
-$to = "info@mydivinecare.com"; // Change this email to your //
+$myemail = "info@mydivinecare.com";
+$to = $myemail; // Change this email to your //
 $subject = "$m_subject:  $name";
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
-$header = "From: $email";
-$header .= "Reply-To: $email";	
+$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\nName: $name\nEmail: $email\nSubject: $m_subject\n\nMessage: $message";
+$headers = "From: $myemail\r\n";
+$headers .= "Reply-To: $email";	
 
-if(!mail($to, $subject, $body, $header))
+if(!mail($to, $subject, $body, $headers))
   http_response_code(500);
 ?>

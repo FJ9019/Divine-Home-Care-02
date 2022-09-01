@@ -42,12 +42,31 @@ body {
     font-family:sans-serif;
     font-size:100%;
     color:#878787;
-    background-color:#f5f8fa
+    background-color:#f5f8fa;
+    box-sizing: border-box;
 }
 
 body h1 {
     font-size:42px!important
 }
+
+h4, .h4 {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 1200px) {
+    h4, .h4 {
+      font-size: calc(1.275rem + 0.3vw) ;
+    }
+  }
+  
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6, .h6 {
+    font-size: 1rem;
+  }
 
 .basic-button,
 .basic-button-red {
@@ -106,8 +125,10 @@ body h1 {
  *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
  */
 
+
 [class*=" icon-"],
 [class^=icon-] {
+    font-family:FontAwesome;
     font-weight:400;
     font-style:normal;
     text-decoration:inherit;
@@ -119,7 +140,7 @@ body h1 {
 [class^=icon-]:before {
     text-decoration:inherit;
     display:inline-block;
-    speak:none
+    speak-as:none;
 }
 
 .icon-large:before {
@@ -138,6 +159,21 @@ body h1 {
     background-position:0 0;
     background-repeat:repeat;
     margin-top:0
+}
+
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^=icon-],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^=icon-],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^=icon-],
+.icon-white, .nav-list > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^=icon-],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-pills > .active > a > [class^=icon-],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^=icon-] {
+    background-image:none
 }
 
 .icon-time:before {
@@ -180,27 +216,27 @@ body h1 {
 }
 
 @media (min-width:576px) {
-    .container {
-        max-width:540px
-    }
+.container {
+    max-width:540px
+}
 }
 
 @media (min-width:768px) {
-    .container {
-        max-width:720px
-    }
+.container {
+    max-width:720px
+}
 }
 
 @media (min-width:992px) {
-    .container {
-        max-width:960px
-    }
+.container {
+    max-width:960px
+}
 }
 
 @media (min-width:1200px) {
-    .container {
-        max-width:1140px
-    }
+.container {
+    max-width:1140px
+}
 }
 
 .container-fluid,.container-lg,
@@ -214,34 +250,34 @@ body h1 {
 }
 
 @media (min-width:576px) {
-    .container,
-    .container-sm {
-        max-width:540px
-    }
+.container,
+.container-sm {
+    max-width:540px
+}
 }
 
 @media (min-width:768px) {
-    .container,.container-md,
-    .container-sm {
-        max-width:720px
-    }
+.container,.container-md,
+.container-sm {
+    max-width:720px
+}
 }
 
 @media (min-width:992px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm {
-        max-width:960px
-    }
+.container,
+.container-lg,
+.container-md,
+.container-sm {
+    max-width:960px
+}
 }
 
 @media (min-width:1200px) {
-    .container,.container-lg,
-    .container-md,.container-sm,
-    .container-xl {
-        max-width:1140px
-    }
+.container,.container-lg,
+.container-md,.container-sm,
+.container-xl {
+    max-width:1140px
+}
 }
 
 .row {
@@ -296,11 +332,11 @@ body h1 {
 }
 
 @media (min-width:768px) {
-    .col-md {
-        flex-basis:0;
-        flex-grow:1;
-        max-width:100%
-    }
+.col-md {
+    flex-basis:0;
+    flex-grow:1;
+    max-width:100%
+}
     
 .col-md-2 {
     flex:0 0 16.667%;
@@ -333,10 +369,10 @@ body h1 {
 }
 
 @media (min-width:992px) {
-    .col-lg-4 {
-        flex:0 0 33.333%;
-        max-width:33.333%
-    }
+.col-lg-4 {
+    flex:0 0 33.333%;
+    max-width:33.333%
+}
 }
 
 .d-none {
@@ -348,23 +384,23 @@ body h1 {
 }
 
 @media (min-width:576px) {
-    .d-sm-block {
-        display:block!important
-    }
+.d-sm-block {
+    display:block!important
+}
 }
 
 @media (min-width:768px) {
-    .d-md-none {
-        display:none!important
-    }
+.d-md-none {
+    display:none!important
+}
 
-    .d-md-block {
-        display:block!important
-    }
+.d-md-block {
+    display:block!important
+}
 
-    .d-md-flex {
-        display:flex!important
-    }
+.d-md-flex {
+    display:flex!important
+}
 }
 
 .flex-row {
@@ -384,9 +420,9 @@ body h1 {
 }
 
 @media (min-width:768px) {
-    .justify-content-md-end {
-        justify-content:flex-end!important
-    }
+.justify-content-md-end {
+    justify-content:flex-end!important
+}
 }
 
 .mt-1,.my-1 {
@@ -410,22 +446,22 @@ body h1 {
 }
 
 @media (min-width:768px) {
-    .mr-md-auto,
-    .mx-md-auto {
-        margin-right:auto!important
-    }
+.mr-md-auto,
+.mx-md-auto {
+    margin-right:auto!important
+}
 }
 
 @media (min-width:992px) {
-    .pr-lg-5,
-    .px-lg-5 {
-        padding-right:4rem!important
-    }
+.pr-lg-5,
+.px-lg-5 {
+    padding-right:4rem!important
+}
     
-    .pl-lg-5,
-    .px-lg-5 {
-        padding-left:4rem!important
-    }
+.pl-lg-5,
+.px-lg-5 {
+    padding-left:4rem!important
+}
     
 .pr-lg-6,.px-lg-6 {
     padding-right:5rem!important
@@ -463,13 +499,13 @@ body h1 {
 }
 
 @media (max-width:767.98px) {
-    .header-logo {
-        display:block;
-        margin:auto;
-        width:102px;
-        height:72px;
-        transition:all .6s ease
-    }
+.header-logo {
+    display:block;
+    margin:auto;
+    width:130px;
+    height:60px;
+    transition:all .6s ease
+}
 
 nav {
     height:45px!important
@@ -503,18 +539,18 @@ nav {
 }
 
 @media (max-width:575.98px) {
-    .banner-content-title {
-        font-size:105%!important;
-        font-weight:700
-    }
+.banner-content-title {
+    font-size:105%!important;
+    font-weight:700
+}
 }
 
 @media (max-width:991.98px) {
-    .container-xs-md {
-        margin:auto!important;
-        width:97%!important;
-        max-width:968px!important
-    }
+.container-xs-md {
+    margin:auto!important;
+    width:97%!important;
+    max-width:968px!important
+}
 
 .landscape-mode {
     flex-basis:100%!important;
@@ -523,18 +559,18 @@ nav {
 }
 
 @media (min-width:992px) {
-    .contact-col {
-        max-width:640px!important
-    }
+.contact-col {
+    max-width:640px!important
+}
 }
 
 @media screen and (orientation:landscape) 
 and (min-device-width:425px) and 
 (max-device-width:980px) {
-    .landscape-mode {
-        flex-basis:100%!important;
-        max-width:100%!important
-    }
+.landscape-mode {
+    flex-basis:100%!important;
+    max-width:100%!important
+}
 }
 
 .button-wrapper {
@@ -726,7 +762,6 @@ header nav .nav-menu
 }
 
 header .contact-button {
-    font-family: sans-serif;
     height:45px;
     margin-top:auto;
     margin-bottom:auto;
@@ -741,7 +776,7 @@ header
 
 .sticky-header {
     padding-top:10px;
-    background-color:#B0C4DE;
+    background-color:#B0C4DE
 }
 
 .sticky-header a {
@@ -775,6 +810,7 @@ header
 .btn-scroll-to-top:before {
     content:"\e92c"
 }
+
 .banner {
     background-image:url(../images/home1_sl4.jpg);
     background-size:cover;

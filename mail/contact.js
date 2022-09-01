@@ -7,20 +7,20 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault();
             var name = $("input#name").val();
-            var email = $("input#email").val();
             var subject = $("input#subject").val();
+            var email = $("input#email").val();
             var message = $("textarea#message").val();
 
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "mail/contact.php",
                 type: "POST",
                 data: {
                     name: name,
-                    email: email,
                     subject: subject,
+                    email: email,
                     message: message
                 },
                 cache: false,

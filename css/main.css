@@ -48,6 +48,24 @@ body h1 {
     font-size:42px!important
 }
 
+h4, .h4 {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 1200px) {
+    h4, .h4 {
+      font-size: calc(1.275rem + 0.3vw) ;
+    }
+  }
+  
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6, .h6 {
+    font-size: 1rem;
+  }
+
 .basic-button,
 .basic-button-red {
     background-color:#2e9dd1;
@@ -63,20 +81,20 @@ body h1 {
     user-select:none;
     width:-webkit-fit-content;
     width:-moz-fit-content;
-    width:fit-content;
+    width:fit-content
 }
 
 .basic-button-red:hover,
 .basic-button:hover {
-    background-color:#218abb;
+    background-color:#218abb
 }
 
 .basic-button-red {
-    background-color:#f2674d;
+    background-color:#f2674d
 }
 
 .basic-button-red:hover {
-    background-color:#cc4f39;
+    background-color:#cc4f39
 }
 
 /*!
@@ -108,6 +126,7 @@ body h1 {
 
 [class*=" icon-"],
 [class^=icon-] {
+    font-family:FontAwesome;
     font-weight:400;
     font-style:normal;
     text-decoration:inherit;
@@ -478,7 +497,6 @@ body h1 {
 }
 
 @media (max-width:767.98px) {
-
 .header-logo {
     display:block;
     margin:auto;
@@ -686,17 +704,16 @@ ul.links li:before {
 }
 
 ul.links li a {
-    color:inherit;
-    text-decoration: underline!important;
+    color:inherit
 }
 
 ul.links li a:hover {
     color:inherit;
-    text-decoration:none;
+    text-decoration:none
 }
 
+
 header {
-    font-family: sans-serif;
     position:fixed;
     top:-5px;
     left:0;
@@ -743,7 +760,6 @@ header nav .nav-menu
 }
 
 header .contact-button {
-    font-family: sans-serif!important;
     height:45px;
     margin-top:auto;
     margin-bottom:auto;
