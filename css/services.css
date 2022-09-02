@@ -941,6 +941,7 @@ header
     text-align: justify;
     justify-content: center;
 }
+
 label {
     margin-top: 10px;
     display: inline-block;
@@ -1042,12 +1043,15 @@ div .img-1 {
     line-height: 1.4rem;
 }
 
-.cen .service p {
-    
+.container-1 p {
+    margin: auto;
+    width: 900px;
 }
+
 .read-more-btn {
     color: #0984e3;
     cursor: pointer;
+    display: none;
 }
 
 .read-more-text {
