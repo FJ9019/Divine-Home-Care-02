@@ -937,6 +937,39 @@ header
     transition: 0.4s;
 }
 
+.service .pointed {
+    text-align: justify;
+    justify-content: center;
+}
+label {
+    margin-top: 10px;
+    display: inline-block;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.r-more-text {
+    display: none;
+    text-align:initial
+}
+
+#check {
+    display: none;
+}
+#check:checked ~ .r-more-text {
+    display: block;
+}
+
+#check:checked ~ label {
+    visibility:hidden;
+}
+
+#check:checked ~ label::after {
+    content: 'Read Less';
+    display: block;
+    visibility: visible;
+}
+
 .service:hover {
     background: #ddd;
 }
@@ -974,34 +1007,56 @@ header
 }
 }
 
-h4 {
-    margin-bottom: 10px;
-    color: #2e9dd1;
-    font-size: 30px;
+.container-1 h5 {
+    color: #3498db;
     text-align: center;
+    padding: 1.4rem;
+    font-size: 2rem;
 }
 
-
-h5 {
-    display:inline-block;
-    position: relative;
-    text-align: justify;
-    left: 17%;
-    width: 70%;
-    margin-bottom: 40px;
-    font-size: 16px;
-}
-.how-img {
-    margin-bottom: 30px;
-    text-align: center;
+div .img-1 {
+    display: flex;
+    position:relative;
+    justify-content: center;
 }
 
-.how-img img {
-    width: 50%;
-    border-radius: 10px;
-    margin-top: 10px;
+@media screen and (max-width: 800px) {
+div .img-1 {
+        width: 50%;
+    }
+    }
+    
+@media screen and (max-width: 500px) {
+div .img-1 {
+        width: 100%;
+    }
+    }
+
+.read-more-container {
+    display:block;
+    gap: 1rem;
 }
 
+.container-1 {
+    padding: 2rem;
+    line-height: 1.4rem;
+}
+
+.cen .service p {
+    
+}
+.read-more-btn {
+    color: #0984e3;
+    cursor: pointer;
+}
+
+.read-more-text {
+    display: none;
+}
+
+.read-more-text--show {
+    display: inline;
+}
 
 /* End Services */
 
