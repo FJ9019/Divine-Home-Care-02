@@ -16,6 +16,8 @@ Header Font : forma-djr-micro, arial, sans-serif
 
 Text Footer : 037fc5
 
+Banner-Content-Title : 32CD32
+
 
 Nursing Skills Services
 Whether you got discharged from the hospital or rehabilitation and need continuity care for your post-surgical Wound / Incision / Drainage care,

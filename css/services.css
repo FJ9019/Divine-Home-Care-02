@@ -825,7 +825,7 @@ header
 
 .banner .banner-overlay 
 .banner-content-title {
-    color:#fff;
+    color:#32CD32;
     font-size:48px
 }
 
@@ -1021,11 +1021,13 @@ label {
 
 .container-1 p {
     margin-top: 10px;
+    margin-left: 30px;
 }
 
 .read-more-btn {
     color: #3498db;
     cursor: pointer;
+    margin-left: 30px;
 }  
   
 .read-more-text {
@@ -1037,7 +1039,7 @@ label {
 }
 
 .img-box {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
    
 .about_section p {
@@ -1054,6 +1056,7 @@ label {
     color: #3498db;
     font-weight: bold;
     margin-bottom: -14px;
+    margin-left: 30px;
 }
 
 
