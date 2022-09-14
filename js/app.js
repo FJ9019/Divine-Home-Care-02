@@ -72,3 +72,10 @@ parentContainer.addEventListener('click', event=>{
 })
 
 
+
+window.addEventListener('mouseup', function(e) {
+    var x = document.querySelector('#nav-menu');
+    if (event.target != document.querySelector(".icon")) {
+        x.style.display = "none";
+    }
+});
