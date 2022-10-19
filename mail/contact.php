@@ -9,7 +9,7 @@ $m_subject = strip_tags(htmlspecialchars($_POST['subject']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
-$myemail = "info1@mydivinecare.com";
+$myemail = "info@mydivinecare.com";
 $to = $myemail; // Change this email to your //
 $subject = "$m_subject:  $name";
 $body = "You have received a new message from your website contact form.\n\n"."Here are the details:\nName: $name\nEmail: $email\nSubject: $m_subject\n\nMessage: $message";
